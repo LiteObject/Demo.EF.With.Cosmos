@@ -4,12 +4,16 @@ offered by Microsoft as part of the Azure cloud platform. It is designed
 to provide fast and scalable access to data using a variety of APIs, 
 including SQL, MongoDB, Cassandra, Azure Table Storage, and Gremlin.
 
-## Prerequisites
-- [Install Azure Cosmos DB Emulator](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator)
+## Install Azure Cosmos DB Emulator
+https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator
 
 ---
-## How to setup docker compose
--
+## How to setup Azure Cosmos DB Emulator using docker compose
+
+### Run Emulator
+
+`docker-compose up -d`
+
 ### Install Certificate
 After simulator is running you need to download simulator self-signed certificate and install it to you machine trusted store.
 
