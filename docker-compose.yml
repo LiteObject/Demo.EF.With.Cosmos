@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  cosmosdb:
+    container_name: azurecosmosemulator
+    hostname: azurecosmosemulator
+    image: mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator        
+    environment:
+      - AZURE_COSMOS_EMULATOR_PARTITION_COUNT=3
+      - AZURE_COSMOS_EMULATOR_ENABLE_DATA_PERSISTENCE=true
+      - AZURE_COSMOS_EMULATOR_IP_ADDRESS_OVERRIDE=192.168.96.1
+    ports:
+      - 8081:8081 
+      - 10251:10251 
+      - 10252:10252 
+      - 10253:10253 
+      - 10254:10254    
